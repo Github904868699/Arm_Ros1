@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <title>ROS Arm WebUI</title>
+  <script src="https://cdn.jsdelivr.net/npm/roslib/build/roslib.min.js"></script>
+  <script src="arm.js"></script>
+</head>
+<body>
+  <h1>机械臂 XYZ 控制</h1>
+  <div>
+    <button onclick="move('x', 0.01)">X+</button>
+    <button onclick="move('x', -0.01)">X-</button>
+  </div>
+  <div>
+    <button onclick="move('y', 0.01)">Y+</button>
+    <button onclick="move('y', -0.01)">Y-</button>
+  </div>
+  <div>
+    <button onclick="move('z', 0.01)">Z+</button>
+    <button onclick="move('z', -0.01)">Z-</button>
+  </div>
+  <pre id="jointState"></pre>
+</body>
+</html>
